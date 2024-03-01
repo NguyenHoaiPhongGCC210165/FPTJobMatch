@@ -56,6 +56,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Create" asp-controller="Profile_Job" asp-route-id="@Model?.Id">Apply</a> |
-    <a asp-action="Index">Back to List</a>
+    @if (ViewBag.Apply == false)
+    {
+        <a asp-action="Create" asp-controller="Profile_Job" asp-route-id="@Model?.Id">Apply</a>
+    }
+    | <a asp-action="Index">Back to List</a>
 </div>

@@ -47,6 +47,19 @@ namespace FPTJOB.Controllers
                 return NotFound();
             }
 
+            var proJob = _context.Profile_Job.Include(p => p.Profile).Where(p => p.JobId == id);
+            var profile = _context.Profiles.Where(p => p.UserID == User.Identity.Name).FirstOrDefault();
+
+            if (proJob.All(p => p.ProfileId == profile.Id) && proJob.Count() > 0)
+
+            {
+                ViewBag.Apply = true;
+            }
+            else
+            {
+                ViewBag.Apply = false;
+            }
+
             return View(job);
         }
 
