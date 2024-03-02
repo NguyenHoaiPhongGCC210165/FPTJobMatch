@@ -2252,3 +2252,4 @@ D:\IT\1670_AppDev\FPTJobMatch\obj\Debug\net7.0\FPTJOB.genruntimeconfig.cache
 D:\IT\1670_AppDev\FPTJobMatch\obj\Debug\net7.0\ref\FPTJOB.dll
 D:\IT\1670_AppDev\FPTJobMatch\obj\Debug\net7.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
 C:\Users\NGUYEN HOAI PHONG\source\repos\FPTJOB(Team)\obj\Debug\net7.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
+D:\IT\1670_AppDev\FPTJobMatch\obj\Debug\net7.0\scopedcss\Views\Shared\_LayoutRegister.cshtml.rz.scp.css

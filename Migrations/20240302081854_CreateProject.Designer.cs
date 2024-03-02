@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FPTJOB.Migrations
 {
     [DbContext(typeof(DBMyContext))]
-    [Migration("20240227123807_CreateProfileJob")]
-    partial class CreateProfileJob
+    [Migration("20240302081854_CreateProject")]
+    partial class CreateProject
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
