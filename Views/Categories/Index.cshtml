@@ -38,6 +38,9 @@
                     </td>
                     <td>
                         @* <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> *@
+                        <a asp-action="Approved" asp-route-id="@item.Id" class="btn btn-labeled btn-info" title="Approve" onclick="return confirm('are you sure)">
+                            <span class="btn-label"><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+                        </a> |
                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-labeled btn-success" title="Edit">
                             <span class="btn-label"><i class="fa fa-edit"></i></span>
                         </a> |
