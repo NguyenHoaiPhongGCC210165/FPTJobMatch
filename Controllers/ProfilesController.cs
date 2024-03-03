@@ -116,7 +116,7 @@ namespace FPTJOB.Controllers
             {
                 return NotFound();
             }
-
+            ModelState.Remove("UploadFile");
             if (ModelState.IsValid)
             {
                 try
