@@ -52,8 +52,6 @@ namespace FPTJOB.Controllers
             return View();
         }
 
-
-
         private string GetUniqueFileName(string fileName)
         {
             fileName = Path.GetFileName(fileName);
