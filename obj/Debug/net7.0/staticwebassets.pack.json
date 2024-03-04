@@ -125,6 +125,10 @@
       "PackagePath": "staticwebassets\\dist\\img\\AdminLTELogo.png"
     },
     {
+      "Id": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\dist\\img\\OnlineJob.png",
+      "PackagePath": "staticwebassets\\dist\\img\\OnlineJob.png"
+    },
+    {
       "Id": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\dist\\img\\avatar.png",
       "PackagePath": "staticwebassets\\dist\\img\\avatar.png"
     },
@@ -8475,6 +8479,10 @@
     {
       "Id": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\plugins\\uplot\\uPlot.min.css",
       "PackagePath": "staticwebassets\\plugins\\uplot\\uPlot.min.css"
+    },
+    {
+      "Id": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\uploads\\1_04-DDD.Assignment 2_PART 2_Tran Nguyet Can_ GCC210146_1b7c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\1_04-DDD.Assignment 2_PART 2_Tran Nguyet Can_ GCC210146_1b7c.pdf"
     },
     {
       "Id": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\uploads\\73_00007_d9c4.jpg",

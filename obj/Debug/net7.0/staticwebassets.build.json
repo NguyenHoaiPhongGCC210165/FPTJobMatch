@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HVOHdebyV7x0bmoj8DQvX4qzNXRZI/QueleErAD1AoY=",
+  "Hash": "eMF5p210um91vZ3ahuQdiRzLlGlsNKG9/Tue8NiA/Hc=",
   "Source": "FPTJOB",
   "BasePath": "_content/FPTJOB",
   "Mode": "Default",
@@ -1851,6 +1851,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\img\\nhp.jpg"
+    },
+    {
+      "Identity": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\dist\\img\\OnlineJob.png",
+      "SourceId": "FPTJOB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\",
+      "BasePath": "_content/FPTJOB",
+      "RelativePath": "dist/img/OnlineJob.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\img\\OnlineJob.png"
     },
     {
       "Identity": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\dist\\img\\photo1.png",
@@ -37075,6 +37092,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\plugins\\uplot\\uPlot.min.css"
+    },
+    {
+      "Identity": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\uploads\\1_04-DDD.Assignment 2_PART 2_Tran Nguyet Can_ GCC210146_1b7c.pdf",
+      "SourceId": "FPTJOB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\",
+      "BasePath": "_content/FPTJOB",
+      "RelativePath": "uploads/1_04-DDD.Assignment 2_PART 2_Tran Nguyet Can_ GCC210146_1b7c.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1_04-DDD.Assignment 2_PART 2_Tran Nguyet Can_ GCC210146_1b7c.pdf"
     },
     {
       "Identity": "D:\\IT\\1670_AppDev\\FPTJobMatch\\wwwroot\\uploads\\73_00007_d9c4.jpg",
