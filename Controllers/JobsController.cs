@@ -71,7 +71,7 @@ namespace FPTJOB.Controllers
         [Authorize(Roles = "Admin, Employer")]
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+            ViewData["CategoryId"] = new SelectList(_context.Categories.Where(c => c.Status), "Id", "Name");
             return View();
         }
 
@@ -88,7 +88,7 @@ namespace FPTJOB.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", job.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories.Where(c => c.Status), "Id", "Name", job.CategoryId);
             return View(job);
         }
 
