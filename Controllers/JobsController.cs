@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FPTJOB.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FPTJOB.Controllers
 {
@@ -19,12 +20,14 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Jobs
+        [Authorize(Roles = "Admin, Employer")]
         public async Task<IActionResult> Index()
         {
             var dBMyContext = _context.Jobs.Include(j => j.Category);
             return View(await dBMyContext.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin, Seeker")]
         public async Task<IActionResult> ListJob()
         {
             var dBMyContext = _context.Jobs.Include(j => j.Category).Where(j => j.Deadline >= DateTime.Now);
@@ -32,6 +35,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Jobs/Details/5
+        [Authorize(Roles = "Admin, Seeker")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Jobs == null)
@@ -50,7 +54,7 @@ namespace FPTJOB.Controllers
             var proJob = _context.Profile_Job.Include(p => p.Profile).Where(p => p.JobId == id);
             var profile = _context.Profiles.Where(p => p.UserID == User.Identity.Name).FirstOrDefault();
 
-            if (proJob.All(p => p.ProfileId == profile.Id) && proJob.Count() > 0)
+            if (proJob.Where(p => p.ProfileId == profile.Id).Count() > 0 && proJob.Count() > 0)
 
             {
                 ViewBag.Apply = true;
@@ -64,6 +68,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Jobs/Create
+        [Authorize(Roles = "Admin, Employer")]
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
@@ -88,6 +93,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Jobs/Edit/5
+        [Authorize(Roles = "Admin, Employer")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Jobs == null)
@@ -141,6 +147,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Jobs/Delete/5
+        [Authorize(Roles = "Admin, Employer")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Jobs == null)

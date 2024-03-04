@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FPTJOB.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FPTJOB.Controllers
 {
@@ -20,11 +21,12 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Profiles
+        [Authorize(Roles = "Admin, Seeker")]
         public async Task<IActionResult> Index()
         {
-              return _context.Profiles != null ? 
-                          View(await _context.Profiles.ToListAsync()) :
-                          Problem("Entity set 'DBMyContext.Profiles'  is null.");
+            return _context.Profiles != null ?
+                        View(await _context.Profiles.ToListAsync()) :
+                        Problem("Entity set 'DBMyContext.Profiles'  is null.");
         }
 
         // GET: Profiles/Details/5
@@ -46,6 +48,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Profiles/Create
+        [Authorize(Roles = "Admin, Seeker")]
         public IActionResult Create()
         {
             ViewBag.UserID = User.Identity.Name;
@@ -88,6 +91,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Profiles/Edit/5
+        [Authorize(Roles = "Admin, Seeker")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Profiles == null)
@@ -114,6 +118,7 @@ namespace FPTJOB.Controllers
             {
                 return NotFound();
             }
+
             ModelState.Remove("UploadFile");
             if (ModelState.IsValid)
             {
@@ -139,6 +144,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Profiles/Delete/5
+        [Authorize(Roles = "Admin, Seeker")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Profiles == null)
@@ -170,14 +176,14 @@ namespace FPTJOB.Controllers
             {
                 _context.Profiles.Remove(profile);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProfileExists(int id)
         {
-          return (_context.Profiles?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Profiles?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

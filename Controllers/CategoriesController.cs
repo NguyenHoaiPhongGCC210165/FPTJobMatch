@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FPTJOB.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FPTJOB.Controllers
 {
@@ -19,14 +20,16 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Categories
+        [Authorize(Roles = "Admin, Employer, Seeker")]
         public async Task<IActionResult> Index()
         {
-              return _context.Categories != null ? 
-                          View(await _context.Categories.ToListAsync()) :
-                          Problem("Entity set 'DBMyContext.Categories'  is null.");
+            return _context.Categories != null ?
+                        View(await _context.Categories.ToListAsync()) :
+                        Problem("Entity set 'DBMyContext.Categories'  is null.");
         }
 
         // GET: Categories/Details/5
+        [Authorize(Roles = "Admin, Employer")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Categories == null)
@@ -45,6 +48,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Categories/Create
+        [Authorize(Roles = "Admin, Employer")]
         public IActionResult Create()
         {
             return View();
@@ -63,10 +67,12 @@ namespace FPTJOB.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(category);
         }
 
         // GET: Categories/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Categories == null)
@@ -118,6 +124,7 @@ namespace FPTJOB.Controllers
         }
 
         // GET: Categories/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Categories == null)
@@ -149,10 +156,12 @@ namespace FPTJOB.Controllers
             {
                 _context.Categories.Remove(category);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Approved(int? id)
         {
             if (_context.Categories == null)
@@ -172,7 +181,7 @@ namespace FPTJOB.Controllers
 
         private bool CategoryExists(int id)
         {
-          return (_context.Categories?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Categories?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
