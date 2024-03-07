@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets\\dist\\img\\user8-128x128.jpg"
     },
     {
+      "Id": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\dist\\img\\women.jpg",
+      "PackagePath": "staticwebassets\\dist\\img\\women.jpg"
+    },
+    {
       "Id": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\dist\\js\\.eslintrc.json",
       "PackagePath": "staticwebassets\\dist\\js\\.eslintrc.json"
     },
@@ -8491,6 +8495,10 @@
     {
       "Id": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\uploads\\73_00007_d9c4.jpg",
       "PackagePath": "staticwebassets\\uploads\\73_00007_d9c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\uploads\\Emily-CV_00c1.docx",
+      "PackagePath": "staticwebassets\\uploads\\Emily-CV_00c1.docx"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FPTJOB.Microsoft.AspNetCore.StaticWebAssets.props",

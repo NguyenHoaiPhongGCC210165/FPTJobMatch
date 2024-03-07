@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uSRTfKdlUoF6rrWL2KK1PVooHqXxmlXTBHSRyAvAl3I=",
+  "Hash": "7Bm6xrH+xDCY2v1Eqh/NMhb/nqJ5JkHSMMIWTUyOfQ4=",
   "Source": "FPTJOB",
   "BasePath": "_content/FPTJOB",
   "Mode": "Default",
@@ -2157,6 +2157,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\img\\user8-128x128.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\dist\\img\\women.jpg",
+      "SourceId": "FPTJOB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\",
+      "BasePath": "_content/FPTJOB",
+      "RelativePath": "dist/img/women.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\img\\women.jpg"
     },
     {
       "Identity": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\dist\\js\\.eslintrc.json",
@@ -37143,6 +37160,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\73_00007_d9c4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\uploads\\Emily-CV_00c1.docx",
+      "SourceId": "FPTJOB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NGUYEN HOAI PHONG\\source\\repos\\FPTJOB(Team)\\wwwroot\\",
+      "BasePath": "_content/FPTJOB",
+      "RelativePath": "uploads/Emily-CV_00c1.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Emily-CV_00c1.docx"
     }
   ]
 }
