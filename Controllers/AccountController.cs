@@ -43,7 +43,7 @@ namespace FPTJOB.Controllers
 
             await _userManager.AddToRoleAsync(user, role);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

@@ -100,6 +100,29 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Admin
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-controller="Admin" asp-action="CreateRole" class="nav-link">
+                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                        <p> Create Role</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Account" asp-action="SetRole" class="nav-link">
+                                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                                        <p> Set Role</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
